@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "detailView.h"
 
-@interface ViewController : UIViewController
+#define METERS_PER_MILE 1609.344
+int counter;
 
+
+@interface ViewController : UIViewController <UIAlertViewDelegate, MKMapViewDelegate, MKAnnotation>
+
+@property (strong, nonatomic) IBOutlet MKMapView *mapVIew;
 
 @end
 

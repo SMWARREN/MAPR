@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		918B3A941CC7B4A500E8356D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918B3A931CC7B4A500E8356D /* MapKit.framework */; };
+		91C02AD91CC7E9DB00BAF6C7 /* mapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C02AD81CC7E9DB00BAF6C7 /* mapAnnotation.m */; };
+		91C02ADC1CC80BAA00BAF6C7 /* detailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C02ADB1CC80BAA00BAF6C7 /* detailView.m */; };
 		91EB8F801CC58B1A00CDB840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8F7F1CC58B1A00CDB840 /* main.m */; };
 		91EB8F831CC58B1A00CDB840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8F821CC58B1A00CDB840 /* AppDelegate.m */; };
 		91EB8F861CC58B1A00CDB840 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8F851CC58B1A00CDB840 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		91EB8F8E1CC58B1A00CDB840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EB8F8C1CC58B1A00CDB840 /* LaunchScreen.storyboard */; };
 		91EB8F991CC58B1A00CDB840 /* MAPRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8F981CC58B1A00CDB840 /* MAPRTests.m */; };
 		91EB8FA41CC58B1A00CDB840 /* MAPRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8FA31CC58B1A00CDB840 /* MAPRUITests.m */; };
+		91EB8FB21CC58B5100CDB840 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EB8FB11CC58B5100CDB840 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		918B3A931CC7B4A500E8356D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		91C02AD71CC7E9DB00BAF6C7 /* mapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapAnnotation.h; path = ../mapAnnotation.h; sourceTree = "<group>"; };
+		91C02AD81CC7E9DB00BAF6C7 /* mapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapAnnotation.m; path = ../mapAnnotation.m; sourceTree = "<group>"; };
+		91C02ADA1CC80BAA00BAF6C7 /* detailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailView.h; sourceTree = "<group>"; };
+		91C02ADB1CC80BAA00BAF6C7 /* detailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailView.m; sourceTree = "<group>"; };
 		91EB8F7B1CC58B1A00CDB840 /* MAPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EB8F7F1CC58B1A00CDB840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91EB8F811CC58B1A00CDB840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 		91EB8F9F1CC58B1A00CDB840 /* MAPRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAPRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EB8FA31CC58B1A00CDB840 /* MAPRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPRUITests.m; sourceTree = "<group>"; };
 		91EB8FA51CC58B1A00CDB840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EB8FB11CC58B5100CDB840 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918B3A941CC7B4A500E8356D /* MapKit.framework in Frameworks */,
+				91EB8FB21CC58B5100CDB840 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,8 @@
 		91EB8F721CC58B1A00CDB840 = {
 			isa = PBXGroup;
 			children = (
+				918B3A931CC7B4A500E8356D /* MapKit.framework */,
+				91EB8FB11CC58B5100CDB840 /* CoreLocation.framework */,
 				91EB8F7D1CC58B1A00CDB840 /* MAPR */,
 				91EB8F971CC58B1A00CDB840 /* MAPRTests */,
 				91EB8FA21CC58B1A00CDB840 /* MAPRUITests */,
@@ -101,11 +115,15 @@
 		91EB8F7D1CC58B1A00CDB840 /* MAPR */ = {
 			isa = PBXGroup;
 			children = (
+				91C02AD71CC7E9DB00BAF6C7 /* mapAnnotation.h */,
+				91C02AD81CC7E9DB00BAF6C7 /* mapAnnotation.m */,
 				91EB8F811CC58B1A00CDB840 /* AppDelegate.h */,
 				91EB8F821CC58B1A00CDB840 /* AppDelegate.m */,
 				91EB8F841CC58B1A00CDB840 /* ViewController.h */,
 				91EB8F851CC58B1A00CDB840 /* ViewController.m */,
 				91EB8F871CC58B1A00CDB840 /* Main.storyboard */,
+				91C02ADA1CC80BAA00BAF6C7 /* detailView.h */,
+				91C02ADB1CC80BAA00BAF6C7 /* detailView.m */,
 				91EB8F8A1CC58B1A00CDB840 /* Assets.xcassets */,
 				91EB8F8C1CC58B1A00CDB840 /* LaunchScreen.storyboard */,
 				91EB8F8F1CC58B1A00CDB840 /* Info.plist */,
@@ -273,6 +291,8 @@
 				91EB8F861CC58B1A00CDB840 /* ViewController.m in Sources */,
 				91EB8F831CC58B1A00CDB840 /* AppDelegate.m in Sources */,
 				91EB8F801CC58B1A00CDB840 /* main.m in Sources */,
+				91C02ADC1CC80BAA00BAF6C7 /* detailView.m in Sources */,
+				91C02AD91CC7E9DB00BAF6C7 /* mapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +518,7 @@
 				91EB8FAA1CC58B1A00CDB840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91EB8FAB1CC58B1A00CDB840 /* Build configuration list for PBXNativeTarget "MAPRTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				91EB8FAD1CC58B1A00CDB840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91EB8FAE1CC58B1A00CDB840 /* Build configuration list for PBXNativeTarget "MAPRUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				91EB8FB01CC58B1A00CDB840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

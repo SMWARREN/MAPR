@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jif-y8-s03">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="aaQ-5I-VKA"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jif-y8-s03" secondAttribute="trailing" id="1Rr-gJ-9zV"/>
+                            <constraint firstItem="Jif-y8-s03" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3k8-YG-7ix"/>
+                            <constraint firstItem="Jif-y8-s03" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="D81-i3-jjd"/>
+                            <constraint firstItem="Jif-y8-s03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hq6-fl-2Ih"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapVIew" destination="Jif-y8-s03" id="AYf-hQ-ed0"/>
+                        <segue destination="UUz-bb-N5S" kind="presentation" identifier="detailView" id="typ-nz-faW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-134" y="174"/>
+        </scene>
+        <!--detailView-->
+        <scene sceneID="SNv-Ah-eD2">
+            <objects>
+                <viewController storyboardIdentifier="details" title="details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UUz-bb-N5S" userLabel="detailView" customClass="detailView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P9h-BA-CE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="LhC-ez-lGq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wji-Ml-j6V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAu-CE-UyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="62.999999999999993"/>
         </scene>
     </scenes>
 </document>

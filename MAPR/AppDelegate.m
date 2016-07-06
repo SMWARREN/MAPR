@@ -14,6 +14,12 @@
 
 @implementation AppDelegate
 
+@synthesize latitude;
+    int latitutde = 0;
+@synthesize  longitute;
+int longitute = 0;
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

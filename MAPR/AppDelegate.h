@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject{
+    NSString *latitude;
+    NSString *longitute;
+
+}
+@property (nonatomic, retain) NSString *latitude;
+@property (nonatomic, retain) NSString *longitute;
 
 @property (strong, nonatomic) UIWindow *window;
 
